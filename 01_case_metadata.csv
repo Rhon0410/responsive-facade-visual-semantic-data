@@ -1,0 +1,102 @@
+Dataset of Adaptive Responsive Architecture,,,,,,,,,,,,,,,,,,,,,,,
+,Image,,Basic Information,,,,,Architect's Information,,Responsive ,,,,Geographic Information,,,,Climate,,,,,
+,image A,image B,Building Name,Year (Completion),Floor area（m²）,Floor count,Type,Architect's Name,Architect's Nationality,Responsive to,Driving Mechanism,Structural Method,Material,Location Country,Location City,Longitude,Latitude,Lowest Temperature (°C),Highest Temperature (°C),Annual Average Temperature,Annual Precipitation (mm),Daily Average Precipitation (mm),Average Humidity（%）
+001,001A,001B,Al Bahr Towers,2012,6503,29,office,AHR Architects,United Kingdom,S,E,J,M,United Arab Emirates,Abu Dhabi,24.4539° N,54.3773° E,13,45,27.9,42,0.12,60
+002,002A,002B,Institute du Monde Arabe,1987,16894,10,office,"Jean Nouvel, Architecture-Studio",France,S,E,J,M,France,Paris,48.8496° N,2.3570° E,2,25,12,637,1.7,77
+003,003A,003B,Urbach Tower,2019,50,1,station,ICD Research Buildings /ITKE University of Stuttgart,Germany,H,Z,I,W,Germany,"
+Urbach",48.8706° N,9.5527° E,-4,35,10,800,2.2,75
+004,004A,004B,HygroSkin-Meteorosensitive Pavilion,2013,50,1,pavilion,"Achim Menges Architect, Oliver David Krieg, Steffen Reichert",Germany,H,Z,I,W,France,Orléans-la-Source,47.9025° N,1.9090° E,-2,26,12,650,1.8,75
+005,005A,005B,HygroShell,2023,50,1,experimental prototype,ICD Research Buildings,Germany,H,Z,I,W,United States of America,Chicago,41.8781° N,87.6298° W,-20,35,10,920,2.5,70
+006,006A,006B,Bloom,2011,7.3,1,pavilion,DO|SU Studio Architecture,United States of America,S,Z,I,M,United States of America,Los Angeles,34.0522° N,118.2437° W,4,35,18,380,1.04,65
+007,007A,007B,The Air Flow(er),2009,,,experimental prototype,LIFT Architecture,United States of America,T,Z,I,M,United States of America,Cambridge,42.3601° N,71.0942° W,-7,29,11,1100,3,65
+008,008A,008B,livMatS Biomimetic Shell,2023,200,1,experimental prototype,ICD Research Buildings,Germany,S,Z,I,W,Germany,Freiburg,47.995° N,7.85° E,-21.6,40.2,11.6,676.1,1.85,75
+009,009A,009B,Adaptive Façade,2003,,,office,Kas Oosterhuis,Netherlands,S、W,E,X,R,Netherlands,Rotterdam,51.9225°N,4.4792°E,0,22,11,850,2.33,80
+010,010A,010B,Kiefer Technic Showroom,2007,545,2,office,Ernst Giselbrecht + Partner,Austria,S,E,L,M,Austria,Bad Gleichenberg,46.8783° N,15.9058° E,-5,30,10,800,2.2,75
+011,011A,011B,One Ocean,2012,6900,2,pavilion,SOMA Architects,United States of America,S,E,X,R,South Korea,Yeosu-si,34.7604° N,127.6622° E,-5,35,14,1475,4,70
+012,012A,012B,"Q1, ThyssenKrupp Quarter Essen",2010,50000,11,school,JSWD Architekten + Chaix & Morel et Associés,German,S,E,L,M,German,Essen,51.4556° N,7.0116° E,-5,35,10,850,2.3,75
+013,013A,013B,Tooker House at Arizona State University,2017,458000,7,school,Solomon Cordwell Buenz,United States of America,S,E,L,M,United States of America,Tempe,33.4255° N,111.9400° W,4,42,23,250,0.7,38
+014,014A,014B,University of Southern Den Mark - Campus Kolding,2014,13700,6,school,Henning Larsen Architects,Denmark,S,E,L,M,Denmark,Kolding,55.4904° N,9.4722° E,-1.4,22,8.9,770,2.1,82
+015,015A,015B,Council House 2 Building,2006,12500,10,office、mall,"Mick Pearce,
+DesignInc.", Australia,S,E,L,W,Australia,Melbourne,37.8136°S,144.9631°E,6,25,15,600,1.6,60
+016,016A,016B,RMIT Design Hub,2012,13000,10,office,Sean Godsell ArchitectsPeddle Thorp Architects (Vic),Australia,S,E,J,G、M,Australia,Melbourne,37.8136°S,144.9631°E,6,25,15,600,1.6,60
+017,017A,017B,Prairie House,2011,null,1,pavilion,Tristan Sterk,United States of America,S,Z,X,R,United States of America,Northfield,44.4583° N,93.1616° W,-13.5,26.4,7.2,629,1.72,73
+018,018A,018B,"PLINTHOS  
+MAB Architecture",2010,70,1,pavilion,mab architecture,Greece,U,E,X,C,Greece,Athens,37.9838°N,23.7275°E,5,34,18,400,1.1,60
+019,019A,019B,MegaFaces,2014,2000,1,pavilion,Asif Khan,United Kingdom,U,E,X,C,Russia,Sochi,43.6028°N,39.7342°E,2,28,14.2,1600,4.4,75
+020,020A,020B,FLARE System,2008,,4,experimental prototype,WHITEvoid,Germany,S,E,J,M,Germany,Berlin,52.5200°N,13.4050°E,-3,25,10,570,1.6,80
+021,021A,021B,Simons Center,2010,3623,6,school,Hoberman Associates,United States of America,S,E,X,G、M,United States of America,New York,40.7128° N,74.0060° W,-10,35,12.5,1200,3.3,63
+022,022A,022B,ME building,2016,19000,4,school,Dominique Perrault Architecture,Switzerland,S,E,L,M,Switzerland, Lausanne,46.5197° N,6.6323° E,-1,25,10,1150,3.15,75
+023,023A,023B,Adaptive Skins ,2013,,,experimental prototype,"Sushant Verma, Zaha Hadid Architects",India,S,E,J,R,United Kingdom,London,51.5074°N,0.1278°W,-5,35,11,600,1.6,75
+024,024A,024B,Milwaukee Art Museum,2001,35000,2,museum,Santiago Calatrava,United States of America,S,E,X,M,United States of America,Wisconsin,43.0389° N,87.9065° W,-10,30,10,900,2.5,70
+025,025A,025B,Photovoltaic Envelopes,2015,,,experimental prototype,ETH Zurich’s Research,Switzerland,S,Y,J,C,Switzerland,Zürich,47.3769° N,8.5417° E,-2,24,10,1100,3,75
+026,026A,026B,Cellophane House,2008,1800,5,residence,ILC Dover,United States of America,S,Y,X,C,United States of America,New York,40.7128° N,74.0060° W,-10,35,12.5,1200,3.3,63
+027,027A,027B,Shanghai Library Competition Program,2018,,,library,School of Architecture，Tianjin University,China,S,E,X,R, China, Shanghai,31.2304° N,121.4737° E,-5,41,24,"2,105.50",5.8,72
+028,028A,028B,Copenhagen International School Nordhavn,2017,25000,7,school,C.F. Møller,Denmark,S,Y,J,C,Denmark,Copenhagen,55.6761° N,12.5683° E,-1.4,22,8.9,728,2,77
+029,029A,029B,Responsive Surface Structure ,2007,,,experimental prototype,ICD Research Buildings,Germany,H,Z,I,W,Germany,Offenbach am Main,50.0956°N,8.7761°E,-1,25,10,600,1.64,75
+030,030A,030B,HygroScope: Meteorosensitive Morphology,2012,,,experimental prototype,ICD Research Buildings,Germany,H,Z,I,W,France,Paris,48.8496° N,2.3570° E,2,25,12,637,1.7,77
+031,031A,031B,Water Reaction,2014,,,experimental prototype,Chao Chen,China,H,Z,I,W,United Kingdom,London,51.5074°N,0.1278°W,-5,35,11,600,1.6,75
+032,032A,032B,Translated Geometries,2014,,,experimental prototype,"Ece Tankal, Efilena Baseta and Ramin Shambayati, ",Barcelona,T,Z,I,C,Spain,Barcelona,41.3851° N,2.1734° E,4,30,16,600,1.6,70
+033,033A,033B,Parametric Hybrid Wall,2014,,,experimental prototype,Lapo Ruffi 、Valentina D'Aniello ,Italy,U,E,J,M,Italy,Florence,43.7696° N,11.2558° E,1,31,15,850,2.3,75
+034,034A,034B,The Dynamic Wall ,2018,,,art installation,TODO,Italy,U,E,J,M,Switzerland,Geneva,46.2044° N,6.1432° E,-1,26,11,1000,2.7,75
+035,035A,035B,Study Capsule,2017,3,1,experimental prototype,Ofir Albag,Israeli,S、A,E,X,R,Italy,Milan,45.4642° N,9.1900° E,1,30,15,920,2.5,75
+036,036A,036B,Prototyping Adaptive Architecture,2018,,,experimental prototype,"School of Architecture, University of Sheffield",United Kingdom,H、T,E,X,G、M,United Kingdom,Sheffield,53.3811° N,1.4701° W,1,22,11,850,2.3,80
+037,037A,037B,HypoSurface,2002,,,art installation,Mark Goulthorpe and the dECOi office ,United States of America,U,E,J,M,United States of America,Cambridge,42.3601° N,71.0942° W,-7,29,11,1100,3,65
+038,038A,038B,The Dynamic Tower,2025,124000,80,residence、hotel、office,David Fisher,Italy,U,E,X,N,United Arab Emirates,Dubai,25.2769°N,55.2962°E,12,41,27,100,0.27,60
+039,039A,039B,Media-TIC,2009,23104,8,office,Enric Ruiz Geli,Spain,S,Z,J,R,Spain,Barcelona,41.3851° N,2.1734° E,4,30,16,600,1.6,70
+040,040A,040B,Responsive sonic-scrim,2006,,,art installation,Kenneth Lan、William Tan、Ting,United States of America,U,E,X,R,United States of America,Ithaca,42.4406°N,76.4966°W,-8.3,27.8,8.4,972,2.67,75
+041,041A,041B,Responsive Surface Structure II ,2008,,,experimental prototype,Steffen Reichert、Achim Menges,Germany,H,Z,I,W,Germany,Offenbach am Main,50.0956°N,8.7761°E,-1,25,10,600,1.64,75
+042,042A,042B,FAZ Pavilion,2010,25,1,pavilion,"Steffen Reichert、
+Scheffler+Partner",Germany,H,Z,I,W,Germany,Frankfurt,50.1109°N,8.6821°E,-1,25,10,600,1.64,75
+043,043A,043B,,,,,experimental prototype,,,U,E,J,C,,,,,,,,,,
+044,044A,044B,,,,,experimental prototype,,,U,E,J,C,,,,,,,,,,
+045,045A,045B,Memory Wall,2004,,,experimental prototype,"Zaha Hadid, Ron Arad and Kathryn Findlay",United Kingdom,U,E,X,C,Spain,Madrid,40.4168°N,3.7038°W,1,33,15,430,1.18,60
+046,046A,046B,King Fahad National Library,2013,86630,4,Library,Gerber Architekten,German,S,Y,X,R,Saudi Arabia,Riyadh Saudi Arabia,24.7136° N,46.6753° E,8,43,26,100,0.27,30
+047,047A,047B,South Australian Health and Medical Research Institute ,2013,25000,7,office,Woods Bagot,Australia,S,E,J,M,Australia,Adelaide,34.9285° S,138.6007° E,7,28,18,536,1.5,55
+048,048A,048B,Futurium Berlin,2017,14007,3,pavilions,Richter Musikowski,Germany,S,E,J,M,Germany,Berlin,52.5200°N,13.4050°E,-3,25,10,570,1.6,80
+049,049A,049B,Leawood Speculative Office,2013,18240,2,office,El Dorado,United States of America,S,E,L,M,United States of America,Leawood,38.9667° N,94.6169° W,-6,32,14,1000,2.7,65
+050,050A,050B,M9-C Building,2012,9845,7,school,BP Architectures,France,S,E,L,M,France,Paris,48.8496° N,2.3570° E,2,25,12,637,1.7,77
+051,051A,051B,Kuggen,2011,5350,5,office,Wingårdh arkitektkontor,Sweden,S,E,X,M,Sweden,Gothenburg,57.7089° N,11.9746° E,-3,21,7,800,2.2,75
+052,052A,052B,Children's Museum of Pittsburgh Expansion Project,2004,7432,3,museum,Koning Eizenberg Architecture,United States of America,W,F,J,C,United States of America,Pennsylvania,40.4406° N,79.9959° W,-8,29,12,1000,2.7,70
+053,053A,053B,Brisbane Airport Domestic Terminal Short-Term Car Park,2012,14000,8,car park,Hassell Architecture,Australia,W,F,J,M,Australia,Brisbane,27.4705° S,153.0260° E,6.7,38.3,20,909,2.5,65
+054,054A,054B,Chain of Ether,2009,,,art installation,Ned Kahn,United States of America,W,F,J,R,United States of America,San Diego,32.7157° N,117.1611° W,8,26,18,260,0.7,70
+055,055A,055B,BBC Pavilion,2019,500,2,pavilions,Universal Design Studio,United Kingdom,W,F,J,M,France,Cannes,43.5528° N,7.0174° E,3,30,16,800,2.2,70
+056,056A,056B,Feather Wall,2021,32516,6,hospital,Overland Partners、RTKL Architecture,United States of America,W,F,J,M,United States of America,San Antonio,29.4241°N,98.4936°W,4,36,20.5,810,2.2,70
+057,057A,057B,Breath Box,2014,20,1,pavilion,NAS Architecture,France,W,F,J,M,France,La Grande-Motte,43.5560° N,4.0830° E,2,30,16,600,1.6,70
+058,058A,058B,Exploratorium,2013,,,art installation,Ned Kahn,,W,F,J,M,United States of America,San Francisco,37.7955°N,122.3937°W,8,24,14,600,1.6,75
+059,059A,059B,AT&T Building,2005,,,office,Ned Kahn,,W,F,J,M,United States of America,Santa Rosa,38.4404°N,122.7141°W,2,30,15,760,2.1,75
+060,060A,060B,"Rosslyn
+1801 N Lynn St",2002,12077,24,office,Ned Kahn,United States of America,W,F,J,M,United States of America,Arlington,38.8951°N,77.0703°W,-3,31,14,1000,2.74,66
+061,061A,061B,"Debenhams flagship
+Oxford Street",2014,34374,7,mall,Ned Kahn,United States of America,W,F,J,M,United Kingdom,London,51.5074°N,0.1278°W,-5,35,11,600,1.6,75
+062,062A,062B,Circa Parking Garage,2019,1533,4,car park,Ned Kahn,United States of America,W,F,J,M,United States of America,Los Angeles,34.0522° N,118.2437° W,4,35,18,380,1.04,65
+063,063A,063B,"Technorama
+The Swiss Science Center",2002,15000,3,museum,Ned Kahn,United States of America,W,F,J,M,Switzerland,Winterthur,47.5056° N,8.7241° E,1.3,18.4,9.2,"1,173",3.2,75
+064,064A,064B,Wind Arbor,2011,16187,6,hotel,Ned Kahn,United States of America,W,F,J,M,Singapore,Singapore,1.3521° N,103.8198° E,23.1,31.5,26.7,"2,166",5.9,84
+065,065A,065B,San Francisco International Airport station,2003,,,art installation,Ned Kahn,United States of America,W,F,J,M,United States of America,San Francisco,37.7955°N,122.3937°W,8,24,14,600,1.6,75
+066,066A,066B,"Biocatalysis Laboratory, Graz University of Technology",2004,4420,6,school,Giselbrecht、Partner Architects,Austria,S,E,L,M,Austria,Graz,47.0707° N,15.4395° E,-7,24,9.2,810,2.2,78
+067,067A,067B,PixelSkin02,2010,,,art installation,Sachin Anshuman,Indian,S,E,J,C, United Kingdom,Glasgow,55.8642° N,4.2518° W,-4,20,10,1124,3,80
+068,068A,068B,PixelSkin01,2006,,,art installation,Sachin Anshuman,Indian,U,E,J,C, United Kingdom,London,51.5074°N,0.1278°W,-5,35,11,600,1.6,75
+069,069A,069B,Eskenazi Hospital parking,2014,1208,7,car park,Rob Ley,United States of America,W,F,J,M,United States of America,Indianapolis,39.7684°N,86.1581°W,-10,30,11,1040,2.85,72
+070,070A,070B, Windswept,2011,3344,2,museum,Charles Sowers,United States of America,W,F,X,M,United States of America,San Francisco,37.7955°N,122.3937°W,8,24,14,600,1.6,75
+071,071A,071B,Aperture,2005,,,art installation,Frédéric Eyl、Gunnar Green ,German,U,E,J,C,German,Berlin,52.5200°N,13.4050°E,-3,25,10,570,1.6,80
+072,072A,072B,Emergent Surface,2008,,,art installation,Hoberman Associates,United States of America,S,E,J,M,United States of America,New York,40.7128° N,74.0060° W,-10,35,12.5,1200,3.3,63
+073,073A,073B,Reef,2009,30,1,art installation,Rob Ley、Joshua G. Stein,United States of America,H,Z,X,C,United States of America,New York,40.7128° N,74.0060° W,-10,35,12.5,1200,3.3,63
+074,074A,074B,Lightswarm ,2014,,,art installation,Future Cities Lab,United States of America,U,E,X,C,United States of America,San Francisco,37.7749°N,122.4194°W,7.7,27.8,8.4,972,2.67,75
+075,075A,075B,lloplastic Architectur,2012,,,art installation,Behnaz Farahi,Iranian,U,E,X,C,United States of America,Los Angeles,34.0522° N,118.2437° W,4,35,18,380,1.04,65
+,,,,,,,,,,"阳光-Solar-S
+湿度-Humidity-H
+温度-Temperature-T
+风-Wind-W
+雨-Rainfall-A
+用户交互-User Interaction-U","材料自适应-Material-Intrinsic-Z
+电力驱动-Electrical Actuation-E
+风力驱动-Wind-Powered Actuation-F
+太阳能驱动-Solar-Powered Actuation-Y","拼插式-Interlocking-I
+合叶式-Hinge-L
+几何构造-Geometry-J
+特殊构造-Strange-X","金属-Metal-M
+木材-Wood-W
+玻璃-Glass-G
+软性材料-Flexible Materials （including rubber, fiberglass, membranes, etc.）-R
+复合材料-Composite Materials-C
+混凝土-Concrete-N",,,,,,,,,,
