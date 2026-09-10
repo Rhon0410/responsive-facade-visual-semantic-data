@@ -6,7 +6,7 @@ This repository provides the **derived research data and generated experimental 
 
 The study investigates façade imagery in active responsive architecture and develops an interpretable visual–semantic workflow connecting architectural image features, unsupervised clustering, cross-scale analysis, researcher-reviewed semantic mapping, and controlled generative-AI validation.
 
-The repository contains case metadata, ResNet-50 image embeddings, 43-dimensional interpretable visual features, Set A and Set B cluster memberships, image-level CLIP evaluation records from two independent controlled-generation batches, the 144 generated images used in the formal generative experiment, the complete generation prompts and recorded parameters, six-prototype similarity scores and predicted prototype labels, and the confusion-matrix data used for the class-specificity analysis.
+The repository contains case metadata, ResNet-50 image embeddings, 43-dimensional interpretable visual features, Set A and Set B cluster memberships, image-level CLIP evaluation records from two independent controlled-generation batches, the 144 generated images used in the formal generative experiment, the complete generation prompts and recorded parameters, six-prototype similarity scores and predicted prototype labels, confusion-matrix data used for the class-specificity analysis, and the Set B façade-masking sensitivity-analysis data.
 
 > **Note on scope.** The results released here are **conditional on a specific analytical configuration**. Cluster memberships, the cross-scale relationship, and the semantic prototypes all change under alternative feature weightings (Sections 7 and 8). They are exploratory research outputs, not a fixed façade taxonomy.
 
@@ -47,8 +47,10 @@ The objective is not to establish a universal taxonomy of active responsive arch
 | Generation-prompt and parameter records | 144 |
 | Six-prototype similarity and prediction records | 144 |
 | Confusion-matrix cells (Set × Condition × Target × Prediction) | 144 |
+| Set B façade-masked feature records | 75 |
+| Original–masked cluster-comparison records | 75 |
 
-The released materials consist of case-level metadata, derived numerical image representations, interpretable visual-feature matrices, clustering outputs, generative evaluation records, the 144 AI-generated experimental images, complete generation prompts and recorded parameters, same-scale six-prototype similarities and predicted labels, and the confusion-matrix data used in the class-specificity analysis.
+The released materials consist of case-level metadata, derived numerical image representations, interpretable visual-feature matrices, clustering outputs, generative evaluation records, the 144 AI-generated experimental images, complete generation prompts and recorded parameters, same-scale six-prototype similarities and predicted labels, confusion-matrix data used in the class-specificity analysis, and Set B façade-masking sensitivity-analysis data.
 
 ---
 
@@ -114,7 +116,7 @@ Set A and Set B were then clustered independently under the shared K value. Thei
 
 # 5. Repository Contents
 
-The repository contains twelve research-data and experimental-output files.
+The repository contains fourteen research-data and experimental-output files.
 
 ```
 responsive-facade-visual-semantic-data/
@@ -132,10 +134,12 @@ responsive-facade-visual-semantic-data/
 ├── 09_Generated_experiment_images.xlsx
 ├── 10_Generation_Prompts_and_Parameters.csv
 ├── 11_Six_Prototype_Similarity_and_Predictions.csv
-└── 12_Figure_22_Confusion_Matrix.csv
+├── 12_Figure_22_Confusion_Matrix.csv
+├── 13_Set_B_RGB_masking_sensitivity_features.csv
+└── 14_Set_B_masked_cluster_membership_corrected.csv
 ```
 
-A recommended inspection order is `01 → 02 → 03/04 → 05/06 → 07/08 → 09 → 10 → 11 → 12`, which follows the analytical sequence of the study.
+A recommended inspection order is `01 → 02 → 03/04 → 05/06 → 13/14 → 07/08 → 09 → 10 → 11 → 12`, which follows the analytical sequence of the study.
 
 ---
 
@@ -145,7 +149,7 @@ Metadata for the 75 architectural cases. It records the correspondence between S
 
 The metadata include basic building information (name, year of completion, floor area, number of stories, building type), designer information (architect name and nationality), response-mechanism attributes, and geographical and climate information (country, city, latitude, longitude, minimum temperature, maximum temperature, annual mean temperature, annual precipitation, mean daily precipitation, humidity).
 
-The four response-mechanism attributes are **response target**, **actuation mechanism**, **construction type**, and **material type**. Their coded categories are defined in the file; latitude and longitude fields follow their conventional geographic definitions.
+The four response-mechanism attributes are **response target**, **actuation mechanism**, **tectonic type**, and **material type**. Their coded categories are defined in the file; latitude and longitude fields follow their conventional geographic definitions.
 
 **Two notes for users of the association analyses.** Cases carrying more than one label on a categorical attribute were combined into a `multiple` category, and missing values were not imputed. Climate variables are available for **73 of the 75 cases**; the categorical attributes are complete at n = 75.
 
@@ -262,6 +266,18 @@ Counts are derived directly from the `Predicted_Cluster` values in File 11. The 
 
 ---
 
+### `13_Set_B_RGB_masking_sensitivity_features.csv`
+
+The updated 75 × 43 Set B feature matrix used for the façade-masking sensitivity analysis. Only the three mean RGB features were recalculated within the valid façade regions defined by the binary masks; the remaining 40 non-RGB features were retained unchanged from File 04.
+
+---
+
+### `14_Set_B_masked_cluster_membership_corrected.csv`
+
+A comparison of the original and façade-masked Set B cluster memberships. Only three images (026B, 049B, and 061B) changed cluster membership. The remaining 72 images (96.0%) retained their original assignments. Agreement between the original and masked partitions was high (ARI = 0.902; NMI = 0.929).
+
+---
+
 # 6. The 43-Dimensional Interpretable Visual Feature Space
 
 Each Set A and Set B observation is represented by a **43-dimensional visual feature vector** consisting of four feature groups.
@@ -332,6 +348,8 @@ Accordingly, the K = 6 memberships released in this repository should be interpr
 
 They should **not** be interpreted as universal, immutable, or naturally occurring categories of active responsive architecture.
 
+Because mean RGB values in full-façade images may be influenced by non-façade content, an additional façade-masking sensitivity analysis was conducted for Set B. Binary masks excluded identifiable sky, ground, adjacent buildings, and foreground vegetation, while visible façade surfaces and their reflections, as well as visible content within transparent or perforated envelopes, were retained. Only the three mean RGB features were recalculated within the valid façade regions; the remaining 40 non-RGB features were retained unchanged. The updated feature matrix was processed using the same variable-wise Z-score standardization, two-dimensional PCA space, and K-means setting (K = 6). Only 026B, 049B, and 061B changed cluster membership, while the remaining 72 images (96.0%) retained their original assignments. Agreement between the original and masked partitions was high (ARI = 0.902; NMI = 0.929).
+
 ---
 
 # 9. ResNet-50 Same-Pipeline Validation and Independent Architectural Attributes
@@ -346,11 +364,11 @@ The general deep representation can therefore produce repeatable coarse visual p
 
 ## 9.2 Independent Architectural Attributes
 
-The study additionally examined associations between the K = 6 visual partitions and independently recorded architectural attributes: **response target**, **actuation mechanism**, **construction type**, **material type**, and **climate conditions**.
+The study additionally examined associations between the K = 6 visual partitions and independently recorded architectural attributes: **response target**, **actuation mechanism**, **tectonic type**, **material type**, and **climate conditions**.
 
 Categorical attributes were tested with Monte Carlo permutation chi-square tests; climate variables were tested with permutation Kruskal–Wallis tests. Cramér's V and ε² were reported as effect sizes. Cases with more than one label were combined into a `multiple` category, and missing values were not imputed. P values were adjusted with the Benjamini–Hochberg false-discovery-rate procedure, with q < .05 treated as significant. Categorical variables were tested at n = 75 and climate variables at n = 73.
 
-After adjustment, only **construction type** was significantly associated with both partitions:
+After adjustment, only **tectonic type** was significantly associated with both partitions:
 
 **Set A: q = .002, Cramér's V = .426**
 
@@ -358,7 +376,7 @@ After adjustment, only **construction type** was significantly associated with b
 
 Response target, actuation mechanism, material type, and climate variables showed no significant associations (**q ≥ .387**).
 
-These results indicate that the visual partitions reflect constructional differences in part, but they should **not** be interpreted as categories directly determined by response mechanism, material type, or climatic conditions.
+These results indicate that the visual partitions reflect differences in tectonic organization in part, but they should **not** be interpreted as categories directly determined by response mechanism, material type, or climatic conditions.
 
 ---
 
@@ -456,13 +474,15 @@ This repository is intended to improve the **transparency, traceability, and ver
 
 ### What can be inspected
 
-Case-level metadata; ResNet-50 baseline embeddings; the 43-dimensional interpretable visual-feature matrices; Set A and Set B K = 6 working cluster memberships; image-level CLIP scores from two independent generation batches; the 144 generated images used in the formal experiment; the complete English prompts for those images; the generation parameters that were actually recorded; image-level SHA-256 integrity identifiers; complete same-scale six-prototype CLIP similarity vectors; predicted prototype labels; own-prototype and strongest-competitor similarities; prototype margins; Top-1 correctness indicators; and the complete confusion-matrix counts.
+Case-level metadata; ResNet-50 baseline embeddings; the 43-dimensional interpretable visual-feature matrices; Set A and Set B K = 6 working cluster memberships; the Set B façade-masked feature matrix and original–masked cluster comparison; image-level CLIP scores from two independent generation batches; the 144 generated images used in the formal experiment; the complete English prompts for those images; the generation parameters that were actually recorded; image-level SHA-256 integrity identifiers; complete same-scale six-prototype CLIP similarity vectors; predicted prototype labels; own-prototype and strongest-competitor similarities; prototype margins; Top-1 correctness indicators; and the complete confusion-matrix counts.
 
 ### What cannot be reproduced from this repository alone
 
 The repository does **not** redistribute the 150 third-party architectural source images. Independent users therefore cannot reconstruct the workflow beginning from architectural-image acquisition and preprocessing using only these materials.
 
 The repository does **not** release the complete analysis source code. It is intended to support **inspection, traceability, and verification of the released derived data and reported outputs**, rather than end-to-end computational reproduction.
+
+Because the architectural source images and complete binary masks are not redistributed, the masked mean RGB values cannot be independently recomputed from pixels using this repository alone. Files 13 and 14 support inspection and verification of the released derived values and clustering results.
 
 No unrecorded generation settings have been retrospectively inferred or reconstructed. Parameters not retained during the experiment are explicitly identified as **not recorded** in File 10.
 
@@ -484,7 +504,7 @@ The original architectural images analyzed in the visual-clustering stage were o
 
 For this reason, **the 150 original architectural source images are not redistributed through this repository.**
 
-The repository instead releases derived research data: case metadata, ResNet-50 numerical embeddings, 43-dimensional visual features, Set A and Set B cluster memberships, image-level CLIP evaluation scores, generation prompts and recorded parameters, six-prototype similarity and prediction data, and confusion-matrix data.
+The repository instead releases derived research data: case metadata, ResNet-50 numerical embeddings, 43-dimensional visual features, Set A and Set B cluster memberships, Set B façade-masking sensitivity-analysis data, image-level CLIP evaluation scores, generation prompts and recorded parameters, six-prototype similarity and prediction data, and confusion-matrix data.
 
 The AI-generated experimental images produced specifically for the controlled generative validation are provided separately in `09_Generated_experiment_images.xlsx`, to support research transparency, visual inspection, and correspondence with the released CLIP evaluation records.
 
@@ -514,9 +534,8 @@ Journal volume, article number, and DOI will be added upon publication.
 
 # 17. Data Availability
 
-This repository provides the derived numerical data, clustering outputs, CLIP evaluation records, generated experimental images, complete generation prompts and recorded parameters, six-prototype similarity and prediction data, and confusion-matrix data associated with the study.
+This repository provides the derived numerical data, clustering outputs, Set B façade-masking sensitivity-analysis data, CLIP evaluation records, generated experimental images, complete generation prompts and recorded parameters, six-prototype similarity and prediction data, and confusion-matrix data associated with the study.
 
 The third-party architectural source images used to construct the original 150-image analytical dataset are not redistributed because of copyright restrictions.
 
 The repository is intended to support transparent inspection and verification of the released research outputs while explicitly documenting the boundaries of full end-to-end reproducibility.
-
